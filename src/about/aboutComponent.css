@@ -1,0 +1,30 @@
+.education-component,
+.employment-component {
+  width: 100%;
+}
+
+.school,
+.duration,
+.company {
+  font-style: italic;
+  font-size: 15px;
+}
+
+.qualification,
+.title {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 800px) {
+  .school,
+  .duration,
+  .company {
+    font-size: 12px;
+  }
+
+  .qualification,
+  .title {
+    font-size: 14px;
+  }
+}

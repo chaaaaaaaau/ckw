@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./header";
+import Home from "./home";
+import About from "./about";
+import Project from "./project";
+import Contact from "./contact";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super();
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    console.log("Clicked");
+  }
+
+  render() {
+    return (
+      <div>
+        <Header handleClick={this.handleClick} />
+        <div className="main">
+          <Home />
+          <About />
+          <Project />
+          <Contact />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
