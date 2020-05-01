@@ -11,4 +11,5 @@ img {
   display: block; /* remove extra space below image */
   margin-left: auto; /* to center an image  */
   margin-right: auto; /* to center an image */
+  z-index: -1;
 }

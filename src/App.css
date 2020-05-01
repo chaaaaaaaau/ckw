@@ -5,6 +5,7 @@
 div {
   width: 90%;
   margin: auto;
+  overflow: auto;
 }
 
 @media only screen and (max-width: 800px) {

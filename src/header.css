@@ -1,11 +1,17 @@
+.navbar {
+  position: fixed;
+  background-color: #fff;
+}
+
 .navbar > .active {
-  font-style: oblique;
+  font-style: italic;
 }
 
 li {
   list-style-type: none;
   float: left;
   width: 25%;
+
   padding: 15px 0;
   overflow: hidden;
 }
@@ -17,6 +23,13 @@ li {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  li {
+    padding: 7px 0;
+    font-size: 11px;
+  }
+}
+
 li a {
   display: inline-block;
 }
@@ -24,7 +37,10 @@ li a {
 /* =============================== Header ====================== */
 
 .header-button {
+  /*
   width: 100%;
+  max-width: inherit;
+  */
   position: relative;
   overflow: hidden;
   color: #008888;

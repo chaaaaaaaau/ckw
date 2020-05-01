@@ -7,6 +7,8 @@ import educationData from "./about/educationData";
 import Employment from "./about/employment";
 import employmentData from "./about/employmentData";
 
+import Skills from "./about/skills";
+
 function About() {
   const educationComponents = educationData.map((education) => (
     <Education
@@ -34,6 +36,7 @@ function About() {
       <h2>Employment</h2>
       {employmentComponents}
       <h2>Skills</h2>
+      <Skills />
       <br />
     </div>
   );
