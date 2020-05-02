@@ -10,6 +10,9 @@ import Contact from "./contact";
 class App extends React.Component {
   constructor() {
     super();
+    this.state = {
+      opening: true,
+    };
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -17,7 +20,17 @@ class App extends React.Component {
     console.log("Clicked");
   }
 
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ opening: false });
+    }, 2000);
+  }
+
   render() {
+    if (this.state.opening) {
+      return <div className="opening">Chau Kwun Wai</div>;
+    }
+
     return (
       <div>
         <Header handleClick={this.handleClick} />

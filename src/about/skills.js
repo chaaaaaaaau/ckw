@@ -44,7 +44,7 @@ const options = {
         },
         ticks: {
           fontColor: "#008888",
-          fontSize: 18,
+          fontSize: 14,
           fontFamily: "Courier New",
           padding: 10,
         },
@@ -56,7 +56,7 @@ const options = {
 class Skills extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{ overflow: "hidden" }}>
         <HorizontalBar data={data} options={options} />
       </div>
     );
