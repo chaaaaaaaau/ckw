@@ -88,3 +88,13 @@
     font-size: 1rem;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .card__title {
+    font-size: 1rem;
+  }
+
+  .card__text {
+    font-size: 0.5rem;
+  }
+}
