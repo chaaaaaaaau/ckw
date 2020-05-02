@@ -6,6 +6,9 @@ div {
   width: 90%;
   margin: auto;
   overflow: auto;
+  color: #008888;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 800px) {
